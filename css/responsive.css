@@ -1,5 +1,5 @@
 /* RESPONSIVE CSS FOR SMALL DEVICES START FROM HERE */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 667.99px) {
 
     /* WELCOME SECTION START FROM HERE */
     #welcome-section {
@@ -49,3 +49,58 @@
 }
 
 /* RESPONSIVE CSS FOR SMALL DEVICES END HERE */
+@media only screen and (min-width: 668px) and (max-width:991.99px) {
+    /* WELCOME SECTION START FROM HERE */
+    #welcome-section {
+        padding: 30px 0px;
+    }
+
+    #welcome-section .welcome-text {
+        width: 60%;
+    }
+    #welcome-section .welcome-image{
+        width: 40%;
+    }
+    #welcome-section .welcome-text h1 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+
+    #welcome-section .welcome-image img {
+        width: 100%;
+    }
+
+    /* WELCOME SECTION END HERE */
+        /* SPONSORE SECTION CSS START FROM HERE */
+        #sponsore-section {
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 15px;
+        }
+    
+        #sponsore-section .sponsore-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        #sponsore-section .sponsore-logo img {
+            width: 95%;
+        }
+    
+        /* SPONSORE SECTION CSS END HERE */
+        /* POPULAR SECTION START FROM HERE */
+        #popular .card-container {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+    
+        /* POPULAR SECTION END HERE */
+}
+
+@media only screen and (min-width: 992px) and (max-width:1200px){
+    #welcome-section .welcome-text h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
