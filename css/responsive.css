@@ -2,6 +2,9 @@
 @media only screen and (max-width: 667.99px) {
 
     /* WELCOME SECTION START FROM HERE */
+    #header nav {
+        display: none;
+    }
     #welcome-section {
         flex-direction: column-reverse;
     }
