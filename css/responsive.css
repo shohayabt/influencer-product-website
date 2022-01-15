@@ -1,0 +1,51 @@
+/* RESPONSIVE CSS FOR SMALL DEVICES START FROM HERE */
+@media only screen and (max-width: 600px) {
+
+    /* WELCOME SECTION START FROM HERE */
+    #welcome-section {
+        flex-direction: column-reverse;
+    }
+
+    #welcome-section .welcome-text,
+    #welcome-section .welcome-image {
+        width: 100%;
+    }
+
+    #welcome-section .welcome-text h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+
+    #welcome-section .welcome-image img {
+        width: 100%;
+    }
+
+    /* WELCOME SECTION END HERE */
+    /* SPONSORE SECTION CSS START FROM HERE */
+    #sponsore-section {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px;
+    }
+
+    #sponsore-section .sponsore-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sponsore-section .sponsore-logo img {
+        width: 95%;
+    }
+
+    /* SPONSORE SECTION CSS END HERE */
+    /* POPULAR SECTION START FROM HERE */
+    #popular .card-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* POPULAR SECTION END HERE */
+}
+
+/* RESPONSIVE CSS FOR SMALL DEVICES END HERE */
