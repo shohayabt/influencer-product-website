@@ -50,6 +50,11 @@
 
 /* RESPONSIVE CSS FOR SMALL DEVICES END HERE */
 @media only screen and (min-width: 668px) and (max-width:991.99px) {
+    /* HEADER SECTION START FROM HERE */
+    #header nav {
+        display: none;
+    }
+    /* HEADER SECTION END HERE */
     /* WELCOME SECTION START FROM HERE */
     #welcome-section {
         padding: 30px 0px;
