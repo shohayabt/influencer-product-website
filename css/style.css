@@ -1,0 +1,308 @@
+/* COMMON STYLES START FROM HERE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+header,
+main {
+    padding: 0px 5%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.button {
+    padding: 10px 24px;
+    background-color: #E21717;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+    text-transform: capitalize;
+}
+
+.button i {
+    margin-left: 5px;
+}
+
+.paragraph {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3A3A3A;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 70px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: #3A3A3A;
+    text-transform: capitalize;
+}
+
+/* COMMON STYLES END HERE  */
+
+/* HEADER SECTION CSS START FROM HERE */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+
+#header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header nav .main-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header nav .main-menu li {
+    padding: 10px 15px;
+}
+
+#header nav .main-menu li a {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: #3A3A3A;
+}
+
+#header nav .shoping i {
+    font-size: 30px;
+}
+
+/* HEADER SECTION CSS END HERE */
+/* WELCOME SECTION CSS START FROM HERE */
+#welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#welcome-section .welcome-text,
+#welcome-section .welcome-image {
+    width: 50%;
+}
+
+#welcome-section .welcome-text h1 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 70px;
+}
+
+#welcome-section .welcome-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-section .welcome-image img {
+    width: 85%;
+}
+
+/* WELCOME SECTON CSS END HERE */
+/* SPONSORE SECTION CSS START FROM HERE */
+#sponsore-section {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 15px;
+    padding: 20px 0px;
+    border-top: 1px solid #3A3A3A;
+    border-bottom: 1px solid #3A3A3A;
+}
+
+#sponsore-section .sponsore-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sponsore-section .sponsore-logo img {
+    width: 75%;
+}
+
+/* SPONSORE SECTION CSS END HERE */
+/* POPULAR SECTION START FROM HERE */
+#popular {
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#popular .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 50px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+#popular .card-container .card {
+    padding: 10px 10px 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+#popular .card-container .card img {
+    width: 100%;
+}
+
+#popular .card-container .card .card-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    margin: 5px 0px;
+    text-transform: capitalize;
+}
+
+#popular .card-container .card .price {
+    font-size: 24px;
+}
+#popular .card-container .card .review{
+    display: inline-flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 5px 0px;
+    font-size: 12px;
+}
+#popular .card-container .card .star{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin-right:10px;
+}
+#popular .card-container .card .star li i{
+    color: gold;
+}
+#popular .card-container .card .paragraph{
+    width: 70%;
+}
+#popular .more{
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding: 10px 0px;
+}
+/* POPULAR SECTION END HERE */
+/* DOWNLOAD SECTION START FORM HERE */
+#download{
+    padding: 100px 0px;
+    background: url(../images/pexels-shvets-production-7194609.jpg);
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+#download::after{
+    position: absolute;
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 20px;
+}
+#download .download-title{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+#download .button{
+    background: black;
+    border: 0.5px solid white;
+}
+#download .button img{
+    width: 20px;
+    margin-right:10px;
+}
+/* DOWNLOAD SECTION END HERE */
+/* FOOTER SECTION START FROM HERE */
+#footer{
+    padding: 30px 0px;
+    background: #0A0826;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-logo{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer .paragraph{
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+#footer .footer-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+#footer .footer-menu li{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0px 5px;
+    background: black;
+    padding: 10px;
+}
+#footer .footer-menu li a i{
+    font-size: 25px;
+    color: white;
+}
+/* FOOTER SECTION END HERE */
