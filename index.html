@@ -18,8 +18,13 @@
 <body>
     <!-- HEADER SECTION START FROM HERE -->
     <header id="header">
+        <div class="menu-bar">
+            <div class="menu-bar-stick"></div>
+            <div class="menu-bar-stick"></div>
+            <div class="menu-bar-stick"></div>
+        </div>
         <a href="#" class="logo">Influencer Products</a>
-        <nav>
+        <nav id="main-nav">
             <ul class="main-menu">
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">Products</a></li>
@@ -27,8 +32,8 @@
                 <li><a href="#">Log In</a></li>
                 <li><a href="#"><i class="fas fa-search"></i></a></li>
             </ul>
-            <a href="#" class="shoping"><i class="fas fa-shopping-cart"></i></a>
         </nav>
+        <a href="#" class="shoping"><i class="fas fa-shopping-cart"></i></a>
     </header>
     <!-- HEADER SECTION END HERE -->
     <main id="main">
@@ -36,7 +41,10 @@
         <section id="welcome-section">
             <div class="welcome-text">
                 <h1>Start your Journey as Influencer</h1>
-                <p class="paragraph">Influencers in social media are people who have built a reputation for their knowledge and expertise on a specific topic. They make regular posts about that topic on their preferred social media channels and generate large followings of enthusiastic, engaged people who pay close attention to their views.</p>
+                <p class="paragraph">Influencers in social media are people who have built a reputation for their
+                    knowledge and expertise on a specific topic. They make regular posts about that topic on their
+                    preferred social media channels and generate large followings of enthusiastic, engaged people who
+                    pay close attention to their views.</p>
                 <a href="#" class="button">
                     <p>Preebook now</p> <i class="fas fa-arrow-right"></i>
                 </a>
@@ -307,6 +315,17 @@
         </ul>
     </footer>
     <!-- FOOTER SECTION END HERE -->
+
+    <script>
+        var mainMenu = document.querySelector('#main-nav');
+        var navBar = document.querySelector('.menu-bar');
+        navBar.addEventListener('click', function (){
+            setTimeout(function () {
+                navBar.classList.toggle('color');
+                mainMenu.classList.toggle('menuActiveResponsive');
+            }, 200)
+        })
+    </script>
 </body>
 
 </html>

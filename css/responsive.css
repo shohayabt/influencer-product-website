@@ -2,8 +2,30 @@
 @media only screen and (max-width: 667.99px) {
 
     /* WELCOME SECTION START FROM HERE */
-    #header nav {
-        display: none;
+    .menu-bar{
+        display: flex;
+    }
+    #header nav{
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform:translateX(-50%);
+        width: 100%;
+        z-index: 999;
+        background: white;
+        padding: 0px 5%;
+        display:none;
+    }
+    #header nav .main-menu{
+        flex-direction: column;
+        width: 100%;
+    }
+    #header nav .main-menu li{
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+
     }
     #welcome-section {
         flex-direction: column-reverse;
@@ -54,8 +76,30 @@
 /* RESPONSIVE CSS FOR SMALL DEVICES END HERE */
 @media only screen and (min-width: 668px) and (max-width:991.99px) {
     /* HEADER SECTION START FROM HERE */
-    #header nav {
-        display: none;
+    .menu-bar{
+        display: flex;
+    }
+    #header nav{
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform:translateX(-50%);
+        width: 100%;
+        z-index: 999;
+        background: white;
+        padding: 0px 5%;
+        display:none;
+    }
+    #header nav .main-menu{
+        flex-direction: column;
+        width: 100%;
+    }
+    #header nav .main-menu li{
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+
     }
     /* HEADER SECTION END HERE */
     /* WELCOME SECTION START FROM HERE */
